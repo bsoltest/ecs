@@ -17,9 +17,9 @@
       "entryPoint": [],
       "portMappings": [
         {
-          "hostPort": 4888,
+          "hostPort": 8080,
           "protocol": "tcp",
-          "containerPort": 4888
+          "containerPort": 8080
         }
       ],
       "command": [],
@@ -34,7 +34,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 2048,
+      "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "844845216585.dkr.ecr.ap-south-1.amazonaws.com/repo",
@@ -58,13 +58,13 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "2048",
+  "memory": "1024",
   "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:844845216585:task-definition/task:4",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:844845216585:task-definition/task:10",
   "family": "task",
   "requiresAttributes": [
     {
@@ -122,8 +122,8 @@
   ],
   "networkMode": "awsvpc",
   "runtimePlatform": null,
-  "cpu": "1024",
-  "revision": 4,
+  "cpu": "512",
+  "revision": 10,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
